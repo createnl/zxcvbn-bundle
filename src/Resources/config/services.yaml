@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    autowire: true
+
+  Createnl\ZxcvbnBundle\ZxcvbnFactory:
+    arguments:
+      - !tagged_iterator zxcvbn.matcher
+
+  Createnl\ZxcvbnBundle\ZxcvbnFactoryInterface: '@Createnl\ZxcvbnBundle\ZxcvbnFactory'
