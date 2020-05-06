@@ -19,7 +19,7 @@
     "require": {
         "php": "^7.3",
         "bjeavons/zxcvbn-php": "dev-master",
-        "symfony/translation": "^5.1@dev"
+        "symfony/translation": "^5.0"
     },
     "require-dev": {
         "symfony/framework-bundle": "^5.0",
