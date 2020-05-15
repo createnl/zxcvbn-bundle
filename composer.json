@@ -18,7 +18,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.3",
-        "bjeavons/zxcvbn-php": "dev-master",
+        "bjeavons/zxcvbn-php": "^1.1",
         "symfony/translation": "^5.0"
     },
     "require-dev": {
