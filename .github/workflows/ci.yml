@@ -45,4 +45,4 @@ jobs:
           COVERALLS_FLAG_NAME: ${{ matrix.php-versions }} on ${{ matrix.operating-system }}
         run: |
           composer global require php-coveralls/php-coveralls
-          php-coveralls --coverage_clover=clover.xml -v
+          php-coveralls --coverage_clover=clover.xml --json_path=clover.json -v
