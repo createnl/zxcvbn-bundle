@@ -1,5 +1,5 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/createnl/zxcvbn-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/createnl/zxcvbn-bundle/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/createnl/zxcvbn-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/createnl/zxcvbn-bundle/?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/createnl/zxcvbn-bundle/badge.svg?branch=master)](https://coveralls.io/github/createnl/zxcvbn-bundle?branch=master)
 [![CI](https://github.com/createnl/zxcvbn-bundle/workflows/CI/badge.svg)](https://github.com/createnl/zxcvbn-bundle/actions?query=workflow%3ACI)
 [![Packagist](https://img.shields.io/packagist/dt/createnl/zxcvbn-bundle)](https://packagist.org/packages/createnl/zxcvbn-bundle)
 
