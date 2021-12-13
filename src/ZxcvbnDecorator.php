@@ -21,7 +21,7 @@ class ZxcvbnDecorator extends Zxcvbn
 
     public function addMatcher(string $className): self
     {
-        $this->inner->addMatcher($className);
+        $this->inner = $this->inner->addMatcher($className);
 
         return $this;
     }
