@@ -20,7 +20,7 @@ class ZxcvbnTranslation extends ZxcvbnDecorator
         parent::__construct($inner);
     }
 
-    public function passwordStrength($password, array $userInputs = [])
+    public function passwordStrength(string $password, array $userInputs = []): array
     {
         $passwordStrength = parent::passwordStrength($password, $userInputs);
 

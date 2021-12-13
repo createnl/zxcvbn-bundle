@@ -19,12 +19,12 @@ class ZxcvbnDecorator extends Zxcvbn
         parent::__construct();
     }
 
-    public function addMatcher(string $className)
+    public function addMatcher(string $className): self
     {
         return $this->inner->addMatcher($className);
     }
 
-    public function passwordStrength($password, array $userInputs = [])
+    public function passwordStrength(string $password, array $userInputs = []): array
     {
         return $this->inner->passwordStrength($password, $userInputs);
     }
