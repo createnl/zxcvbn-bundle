@@ -21,7 +21,9 @@ class ZxcvbnDecorator extends Zxcvbn
 
     public function addMatcher(string $className): self
     {
-        return $this->inner->addMatcher($className);
+        $this->inner->addMatcher($className);
+
+        return $this;
     }
 
     public function passwordStrength(string $password, array $userInputs = []): array
