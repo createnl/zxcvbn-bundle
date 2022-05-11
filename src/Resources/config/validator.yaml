@@ -1,0 +1,6 @@
+services:
+  Createnl\ZxcvbnBundle\Validator\Constraints\ZxcvbnPasswordStrengthValidator:
+    arguments:
+      - '@Createnl\ZxcvbnBundle\ZxcvbnFactory'
+    tags:
+      - 'validator.constraint_validator'

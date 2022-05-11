@@ -24,6 +24,7 @@
     "require-dev": {
         "symfony/framework-bundle": "^5.4|^6.0",
         "symfony/console": "^5.4|^6.0",
+        "symfony/validator": "^5.4|^6.0",
         "phpunit/phpunit": "^9.5"
     }
 }
