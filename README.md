@@ -44,6 +44,7 @@ This package supports the localization of warning and suggestion messages. Check
 Supported languages:
 - Dutch 🇳🇱
 - English 🇺🇸
+- French 🇫🇷
 
 [More about localization in Symfony.](https://symfony.com/doc/current/translation.html#configuration)
 
@@ -58,7 +59,7 @@ Override in your project:
 Contributing a language:
 1. Fork this repository
 2. Copy [messages.en.yaml](src/Resources/translations/messages.en.yaml)
-3. Change the filename to `messages.LOCALE.yaml` (for example `messages.fr.yaml`)
+3. Change the filename to `messages.LOCALE.yaml` (for example `messages.es.yaml`)
 4. Open it up and translate the right-hand values to your language
 5. Create a Pull Request
 6. Thank you!
