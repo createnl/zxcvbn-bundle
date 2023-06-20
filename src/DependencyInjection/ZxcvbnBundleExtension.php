@@ -6,6 +6,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\Validator\Validation;
 
 class ZxcvbnBundleExtension extends Extension
 {
@@ -17,5 +18,9 @@ class ZxcvbnBundleExtension extends Extension
         );
 
         $loader->load('services.yaml');
+
+        if (class_exists(Validation::class)) {
+            $loader->load('validator.yaml');
+        }
     }
 }

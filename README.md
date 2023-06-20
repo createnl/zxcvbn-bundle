@@ -4,7 +4,8 @@
 [![Packagist](https://img.shields.io/packagist/dt/createnl/zxcvbn-bundle)](https://packagist.org/packages/createnl/zxcvbn-bundle)
 
 # Zxcvbn Symfony Bundle
-A bundle to integrate [zxcvbn-php](https://github.com/bjeavons/zxcvbn-php) with your symfony app. Supports localization and custom matchers. 
+A bundle to integrate [zxcvbn-php](https://github.com/bjeavons/zxcvbn-php) with your symfony app. Supports localization and custom matchers.
+This bundle also provides a constraint to validate the strength of a password in a property.
 
 ## Installation
 ```bash
@@ -37,6 +38,22 @@ class PasswordController
     }
 }
 ```
+
+## Validator
+To validate the strength of a password in a property, follow this example:
+
+```php
+use Createnl\ZxcvbnBundle\Validator\Constraints as Assert;
+
+class User
+{
+    #[Assert\ZxcvbnPasswordStrength]
+    private string $password;
+}
+```
+
+You can also use the constraint as an annotation.
+The constraint can take a `minScore` parameter (`4` by default).
 
 ## Localization
 This package supports the localization of warning and suggestion messages. Checks on common passwords, words and (family) names are only in English (US). But you can [tag your own matcher](#extending-matchers) to extend to your needs. 
